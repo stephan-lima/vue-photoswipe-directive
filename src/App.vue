@@ -11,7 +11,7 @@
     <h2>Lazy Load</h2>
 
     <div class="container lazy" v-lazy-container="{ selector: 'img' }">
-      <img v-preview:scope-b :data-src="imageContext('./01.jpg')" alt="image 01" />
+      <img v-preview:scope-b="{w: 200,h: 200}" :data-src="imageContext('./01.jpg')" alt="image 01" />
       <img v-preview:scope-b :data-src="imageContext('./02.jpg')" alt="image 02" />
       <img v-preview :data-src="imageContext('./03.jpg')" alt="image 03" />
       <img v-preview :data-src="imageContext('./04.png')" alt="image 04" />

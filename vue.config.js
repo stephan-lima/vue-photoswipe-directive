@@ -4,6 +4,9 @@ module.exports = {
   publicPath: './',
 
   css: { extract: false },
+  devServer: {
+    disableHostCheck: true,
+  },
 
   chainWebpack (config) {
     if (!isLibraryMode) {
